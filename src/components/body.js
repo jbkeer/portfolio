@@ -29,7 +29,7 @@ import car from '../assets/img/car.png';
 import abc from '../assets/img/abc.png';
 import React, { useEffect, useRef } from 'react';
 import Typed from 'typed.js';
-import profile2 from '../assets/img/pp-2.png'
+import profile4 from '../assets/img/pp-4.jpg'
 import portrait from '../assets/img/self-portrait.jpg'
 
 function Body() {
@@ -59,7 +59,7 @@ function Body() {
       <header id="header">
         <div className="d-flex flex-column">
           <div className="profile">
-            <img src={profile2} alt="" className="img-fluid rounded-circle"/>  
+            <img src={profile4} alt="" className="img-fluid rounded-circle"/>  
             {/* <h1 className="text-light text-center"><a href="http://localhost:3000/">Johnberl Keer Ababon</a></h1> */}
             {/* <div className="social-links mt-3 text-center">
               <a href="https://educlaasglobal-my.sharepoint.com/:b:/g/personal/bdse-0922-112_learning_educlaas_com/ET-sQQOIxKJBiz2oDYiKD2EBMdfqFSyGklMIXmZvrYoLJA?e=2RPmDN" 
@@ -88,7 +88,10 @@ function Body() {
               <li><a href="#skills" className="nav-link scrollto">
                   <i className="bx bxs-brain"></i> <span>Skills</span></a></li>
               <li><a href="#resume" className="nav-link scrollto">
-                  <i className="bx bxs-file-blank"></i> <span>Education</span></a></li>
+                  <i className="bx bxs-buildings
+                  "></i> <span>Experience</span></a></li>
+              <li><a href="#resume" className="nav-link scrollto">
+                  <i className="bx bxs-book"></i> <span>Journey</span></a></li>
               <li><a href="#portfolio" className="nav-link scrollto">
                   <i className="bx bxs-book-content"></i> <span>Projects</span></a></li>
               <li><a href="#contact" className="nav-link scrollto">
@@ -110,8 +113,9 @@ function Body() {
         I aspire to be a <span ref={typedRef} className="typed text-orange" data-typed-items="Front-End Developer, Back-End Developer, Full-Stack Developer"></span>
       </p>
       <div className='d-flex justify-content-end'>
-        <button className='btn btn-outline-light small me-2'>Resume</button>
-        <button className='btn btn-outline-light small'>LinkedIn</button>
+        <a className='btn btn-outline-light small me-2' href='http://tinyurl.com/jbkeerresume' target='_blank' rel="noreferrer">Resume</a>
+        <a className='btn btn-outline-light small' href="https://www.linkedin.com/in/johnberl-keer-ababon/" target='_blank' rel="noreferrer">LinkedIn</a>
+        {/* <link className='btn btn-outline-light small' rel="pingback" href="http://tinyurl.com/jbkeerresume" defaultValue={"Press"} /> */}
       </div>
     </div>
     {/* <div className='align-items-end'>
@@ -133,13 +137,13 @@ function Body() {
             </div>
 
             <div className="row">
-              <div className="col-lg-4" data-aos="fade-right">
+              <div className="col-lg-4" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1000">
                 <img src={portrait} className="img-fluid" alt=""/>
               </div>
-              <div className="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+              <div className="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1000" >
                 <h3>Aspiring Software Engineer &nbsp; | &nbsp; Full-Stack Developer</h3>
                 <p className="fst-italic mt-3">
-                  I'm currently pursuing my <strong>Applied Degree in Software Engineering at Lithan Academy - EduClaas. </strong>
+                  I'm currently pursuing my <strong>Applied Degree in Software Engineering at Lithan Academy - eduCLaaS. </strong>
                   My academic curriculum has equipped me with a solid foundation in programming principles, 
                   algorithms, software development methodologies, UI/UX design, and more.
                 </p>
@@ -215,29 +219,30 @@ function Body() {
         </section>
         {/* END OF SKILLS */}
 
-        {/* EDUCATION */}
+        {/* JOURNEY */}
         <section id="resume" className="resume">  
           <div className="container">
 
             <div className="section-title">
-              <h2>Education</h2>
+              <h2>Journey</h2>
               <p className='text-white'>Education plays a vital role in shaping my skills and knowledge. Here's a glimpse of my educational journey, 
                 where I've acquired a solid foundation in software engineering and a passion for continuous learning.</p>
             </div>
 
             <div className="row">
               <div className="col-lg-6" data-aos="fade-up">
-                <h3 className="resume-title">Summary</h3>
+                <h3 className="resume-title text-white">Summary</h3>
                 <div className="resume-item pb-0 text-white">
-                  <h4>Johnberl Keer Ababon</h4>
-                  <p><em>Curious and passionate software engineering student with almost 1 year of bootcamp experience 
+                  <h4>Kapital DX  -  QA Tester Intern </h4>
+                  <h5>2023 - Present</h5>
+                  {/* <p><em>Curious and passionate software engineering student with almost 1 year of bootcamp experience 
                     in developing user-centric software applications. Trained in the entire software development 
                     lifecycle, from conceptualization to final product delivery, ensuring high-quality and innovative 
-                    solutions.</em></p>
+                    solutions.</em></p> */}
                   <ul>
-                    <li>Mabolo, Cebu City, Philippines</li>
-                    <li>+63 953 0625 624</li>
-                    <li>jbkeerababon@gmail.com</li>
+                    <li>Executed test cases and test scenarios to ensure the thorough validation of software functionality.</li>
+                    <li>Tracked and reported defects, collaborating with a team to drive timely fixes and improve product quality.</li>
+                    <li>Participated in regular team meetings to discuss testing progress and identify potential bottlenecks.</li>
                   </ul>
                 </div>
 
@@ -264,7 +269,7 @@ function Body() {
                 <div className="resume-item">
                   <h4>Applied Degree in Software Engineering</h4>
                   <h5>2022 - Present</h5>
-                  <p><em>Lithan Academy - EduClaas</em></p>
+                  <p><em>Lithan Academy - eduCLaaS</em></p>
                   <ul>
                     <li>Developed numerous projects (battleship game, Car sales portal, Store website with APIs, etc.)</li>
                     <li>Learned about HTML, CSS, Javascript, Java, UI Design, Databases, Spring Framework, and more.</li>
@@ -329,7 +334,7 @@ function Body() {
                   and fetch basic information such as name and email from the API. </p>
                 </div>
                 <a href="https://github.com/jbkeer/Know-Your-Neighborhood-Website-with-API.git" target="_blank" 
-                  rel="noopener noreferrer" className="btn btn-dark mb-3"><i class='bx bxl-github'></i>View source code</a>
+                  rel="noopener noreferrer" className="btn btn-dark mb-3"><i class='bx bxl-github'></i> View source code</a>
               </div>
               </div>
  
@@ -353,7 +358,7 @@ function Body() {
                   The portal should allow users to login, and post a car for sale.</p>
                 </div>
                   <a href="https://github.com/jbkeer/Used-Car-Sales-Website.git" target="_blank" rel="noopener noreferrer" 
-                    className="btn btn-dark mb-4"><i class='bx bxl-github'></i>View source code</a>
+                    className="btn btn-dark mb-4"><i class='bx bxl-github'></i> View source code</a>
               </div>
               </div>
 
@@ -376,7 +381,7 @@ function Body() {
                    We needed to design, develop, implement, test and document for ABC Jobs community portal using spring framework.  </p>
                 </div>
                    <a href="https://github.com/jbkeer/ABC-Jobs-Website.git" target="_blank" rel="noopener noreferrer" 
-                   className="btn btn-dark mb-4"><i class='bx bxl-github'></i>View source code</a>
+                   className="btn btn-dark mb-4"><i class='bx bxl-github'></i> View source code</a>
               </div>
               </div>
             </div>
