@@ -233,8 +233,9 @@ function Body() {
               <div className="col-lg-6" data-aos="fade-up">
                 <h3 className="resume-title text-white">Summary</h3>
                 <div className="resume-item pb-0 text-white">
-                  <h4>Kapital DX  -  QA Tester Intern </h4>
+                  <h4>QA Tester Intern </h4>
                   <h5>2023 - Present</h5>
+                  <p><em>Kapital DX</em></p>
                   {/* <p><em>Curious and passionate software engineering student with almost 1 year of bootcamp experience 
                     in developing user-centric software applications. Trained in the entire software development 
                     lifecycle, from conceptualization to final product delivery, ensuring high-quality and innovative 
